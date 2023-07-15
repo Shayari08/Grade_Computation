@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Computation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #a8a8a8;
+        }
+
+        tr:hover {
+            background-color: #f3f0f0;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="submit"] {
+            padding: 10px;
+            background-color: #4c74af;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Computation</h1>
+
+        <!-- Displaying all records -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Grade</th>
+                    <th>Minimum Score</th>
+                    <th>Maximum Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td>
+                    <td>80</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>70</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>60</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>50</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>40</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>0</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Navigation buttons -->
+        <div class="form-container">
+            <input type="button" value="First Entry">
+            <input type="button" value="Last Entry">
+        </div>
+
+        <!-- Search form -->
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Search by Grade">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <h2>Enter new record</h2>
+        <!-- DML operations form -->
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Grade">
+                <input type="text" placeholder="Minimum Score">
+                <input type="text" placeholder="Maximum Score">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
